@@ -80,4 +80,125 @@ f.setIconImage(icon);
 		f.setSize(300,300);
 		f.setVisible(true);	
 	}
+	public void actionPerformed(ActionEvent e){
+		if(e.getSource()==b1){
+			s3=tf.getText();
+			s4="0";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b2){
+			s3=tf.getText();
+			s4="1";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b3){
+			s3=tf.getText();
+			s4="2";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b4){
+			s3=tf.getText();
+			s4="3";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b5){
+			s3=tf.getText();
+			s4="4";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b6){
+			s3=tf.getText();
+			s4="5";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b7){
+			s3=tf.getText();
+			s4="6";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b8){
+			s3=tf.getText();
+			s4="7";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b9){
+			s3=tf.getText();
+			s4="8";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b10){
+			s3=tf.getText();
+			s4="9";
+			s5=s3+s4;
+			tf.setText(s5);
+		}
+		if(e.getSource()==b11){
+			s1=tf.getText();
+			tf.setText("");
+			c=1;
+		}
+		if(e.getSource()==b12){
+			s1=tf.getText();
+			tf.setText("");
+			c=2;
+		}
+		if(e.getSource()==b13){
+			s1=tf.getText();
+			tf.setText("");
+			c=3;
+		}
+		if(e.getSource()==b14){
+			s1=tf.getText();
+			tf.setText("");
+			c=4;
+		}
+		if(e.getSource()==b15){
+			s1=tf.getText();
+			tf.setText("");
+			c=5;
+		}
+		if(e.getSource()==b16){
+			s2=tf.getText();
+			if(c==1){
+				n=Integer.parseInt(s1)+Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==2){
+				n=Integer.parseInt(s1)-Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==3){
+				n=Integer.parseInt(s1)*Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==4){
+				n=Integer.parseInt(s1)/Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+			else if(c==5){
+				n=Integer.parseInt(s1)%Integer.parseInt(s2);
+				tf.setText(String.valueOf(n));
+			}
+						
+		}
+		if(e.getSource()==b17){
+			tf.setText("");
+		}
+	
+	}
+	public static void main(String[] args) 
+	{
+		calc v=new calc();
+	}
+}
+
 	
